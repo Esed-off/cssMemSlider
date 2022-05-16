@@ -13,11 +13,12 @@
         transform: translate(-50%, -50%);
     }
     .slider {
-        background:rgb(116, 106, 106);;
+        background:rgb(38, 37, 41);
         width: 900px;
         height: 600px;
         overflow: hidden;
-        border: 10px solid rgb(116, 106, 106);
+        border: 10px solid rgb(38, 37, 41);
+        border-radius: 8px;
     }
     .slides {
     width: 400%;
@@ -42,12 +43,12 @@
         top: 700px;
         width: 1100px;
         height: 100px;
-        background:rgb(116, 106, 106);
+        background:rgb(3, 0, 24);
     }
     .slider-nav {
         position: absolute;
         bottom: 19%;
-        left: 93%;
+        left: 95.5%;
         transform: translateX(-50%);
         display: flex;
     }
@@ -63,8 +64,13 @@
     }
     
     .bar:hover{
-        opacity: 1;
-        transform: scale(1.1);
+        opacity: 2;
+        background: rgb(125, 255, 255);
+        transform: scale(1.2);
+        
+    }
+    .bar:focus{
+        background: rgb(36, 36, 36);
     }
 
     input[name='r']{
@@ -72,7 +78,6 @@
         visibility: hidden;
     }
  
-
     #r1:checked ~ .s1{
         margin-left: 0;
     }
@@ -86,6 +91,7 @@
     margin-left: -75%;
     } 
 
+    
 
 }
 /*а вот тут будет уже для мобилок*/
@@ -100,11 +106,12 @@
         transform: translate(-50%, -50%);
     }
     .slider {
-        background:rgb(116, 106, 106);;
+        background:rgb(38, 37, 41);
         width: 320px;
         height: 400px;
         overflow: hidden;
-        border: 10px solid rgb(116, 106, 106);
+        border: 10px solid rgb(38, 37, 41);
+        border-radius: 8px;
     }
     .slides {
     width: 400%;
@@ -129,7 +136,7 @@
         top: 700px;
         width: 1100px;
         height: 100px;
-        background:rgb(116, 106, 106);
+        background:rgb(0, 0, 0);
     }
     .slider-nav {
         position: absolute;
@@ -137,6 +144,18 @@
         left: 50%;
         transform: translateX(-50%);
         display: flex;
+    }
+
+    .cock{
+        height: 10px;
+        width: 10px;
+        margin: 6px;
+        cursor: pointer;
+        background: aqua;
+        opacity: .7;
+        border-radius: 10px;
+        transition: all .4s ease;
+        z-index: 10;
     }
     .bar {
     height: 10px;
